@@ -1,0 +1,3 @@
+config.py
+*.pyc
+project_name_uwsgi.ini
