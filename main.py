@@ -3,9 +3,6 @@ import config
 
 app = Flask(__name__)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 
 @app.before_request
 def before_request():
@@ -20,6 +17,9 @@ def after_request(r):
     # handle something after request
     # like close database connection
     return r
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 # config logging
 if not app.debug:
